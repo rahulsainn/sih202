@@ -1,0 +1,70 @@
+@font-face {
+	font-family: gilroy;
+	src: url(Gilroy-Medium.ttf);
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+#page1{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	z-index: 10000;
+	position: fixed;
+	top: 0;
+	align-items: center;
+	flex-direction: column;
+	gap: 5%;
+	justify-content: center;
+	background-color: #FCF4E6;
+}
+.count{
+	font-size: 2rem;
+	opacity: 0.5;
+	color: #000;
+}
+.circle{
+	width: 80px;
+	height: 80px;
+	border: 15px solid #FCF4E6;
+	/* background-color: black; */
+	border-top-color: rgb(0, 255, 132);
+	border-radius: 50%;
+	position: relative;
+	animation: rotate 1s infinite ;
+	animation-delay: 0.5s;
+}
+h1 {
+	/* margin-left: -4px; */
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+.words{
+	transition: all 0.5s ease;
+}
+#page2{
+	background-color: rgb(240, 244, 135);
+	height: 100vh;
+	font-family: gilroy;
+	position: fixed;
+	top:0;
+	display: flex; align-items: center; justify-content: center;
+	/* flex-direction: column; */
+	gap: 1%;
+
+	width: 100%;
+}
+.p4bottom{
+	margin-left: 30px;
+	font-size: 5rem;
+}
+@keyframes rotate {
+	0%{
+
+	}
+	100%{
+		transform: rotate(1turn);
+	}
+}
